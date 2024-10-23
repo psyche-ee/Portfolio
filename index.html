@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> 
+    <script src="https://kit.fontawesome.com/c4df0b120e.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="portfolio.css">
+    <title>Eduardo Belda | Portfolio</title>
+</head>
+<body>
+    <header>
+        <a href="#home" class="logo">Eduard</a>
+        <nav id="menu">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Gallery</a>
+            <a href="#contact">Contact</a>
+            <i class="fas fa-circle-xmark" onclick="closemenu()"></i>
+        </nav>
+        <i class="fas fa-bars" id="menu-icon" onclick="openmenu()"></i>
+    </header>
+    <section id="home">
+        <div class="home-img">
+            <img src="portfolio_pic.jpg">
+        </div>
+        <div class="home-content">
+            <h1>Hi I'm <span>Eduard</span></h1>
+            <h3 class="typing-text">I'm <span></span></h3>
+            <p>A passionate college student with a deep love for 
+                photography and videography. I capture moments and 
+                turn them into memories, blending creativity with 
+                skill.</p>
+            <a href="#contact" class="btn">Message me</a>
+        </div>
+    </section>
+    <!-- ---------About-------- -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="portfolio_pic.jpg" alt="">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="paragraph">My name is Eduardo D. Belda Jr., and I’m from the scenic town of 
+                        Dalaguete in southern Cebu. Now based in Basak Pardo, Cebu City, I’m currently 
+                        pursuing a Bachelor of Science in Information Technology. Alongside my academic 
+                        journey, I’m passionate about visual storytelling through photography and 
+                        videography. When I’m not immersed in tech or behind the camera, I enjoy playing 
+                        video games, sports, and challenging myself with board games.
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('hobbies')">Hobbies</p>
+                        <p class="tab-links" onclick="opentab('talent')">Talent/Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('address')">Address</p>
+                        <p class="tab-links" onclick="opentab('favorites')">Favorites</p>
+                    </div>
+                    <div class="tab-contents  active-tab" id="hobbies">
+                        <ul>
+                            <li><span>Playing Video Games</span><br><ul>
+                                <li>ML</li>
+                                <li>COC</li>
+                            </ul></li>
+                            <li><span>Sports</span><br><ul>
+                                <li>Basketball</li>
+                                <li>Badminton</li>
+                            </ul></li>
+                            <li><span>Playing Board Games</span><br><ul>
+                                <li>Damath</li>
+                                <li>Sci-Dama</li>
+                            </ul></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="talent">
+                        <ul>
+                            <li><span>Talent</span><br><ul>
+                                <li>Taking pictures</li>
+                                <li>Editing videos</li>
+                            </ul></li>
+                            <li><span>Skills</span><br><ul>
+                                <li>Photography</li>
+                                <li>Videography</li>
+                            </ul></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Elementary</span><br><ul>
+                                <li>Langkas Elementary School</li>
+                            </ul></li>
+                            <li><span>Junior High School</span><br><ul>
+                                <li>Mantalongon National High School</li>
+                            </ul></li>
+                            <li><span>Senior High School</span><br><ul>
+                                <li>Dalaguete National High School</li>
+                            </ul></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="address">
+                        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.6726722137814!2d123.863159475035!3d10.286237489834253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a999258dcd2dfd%3A0x22890585ef023b53!2s7VP8%2BF7X%2C%20Cebu%20City%2C%206000%20Cebu!5e1!3m2!1sen!2sph!4v1729662028191!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                    </div>
+                    <div class="tab-contents" id="favorites">
+                        <div class="favorite_container">
+                            <div class="fav_buttons">
+                                <button class="btn btn2" onclick="showMovie()">Movie</button>
+                                <button class="btn btn2" onclick="showMusic()">Music</button>
+                                <button class="btn btn2" onclick="showFood()">Food</button>
+                            </div>
+                            <div class="fav_container">
+                                <div class="movie" id="movie">
+                                    <video src="movie.mp4" controls></video>
+                                </div>
+                                <div class="music" id="music">
+                                    <img src="music_cover.jpg" alt="">
+                                    <p>Baggages <br><span>Zeke Abella</span></p>
+                                    <audio src="music.mp3" controls></audio>
+                                </div>
+                                <div class="food" id="food">
+                                    <img src="food.jpg" alt="">
+                                    <p>Chocolate Cake</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --------------portfolio----------- -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="portfolio-col1">
+                    <h1 class="sub-title">Gallery</h1>
+                    <p class="paragraph">I believe in the power of visuals to tell stories that 
+                        words sometimes can't. From candid shots to cinematic video reels, my 
+                        gallery showcases the journey of my passion for visual arts.</p>
+                    <button class="btn" onclick="showPhoto()">Photography</button>
+                    <button class="btn" onclick="showVideo()">Videography</button>
+                </div>
+                <div class="portfolio-col2">
+                    <div class="img_vid">
+                        <div class="photo-vid" id="photo">
+                            <img class="slide" src="portfolio01.jpg" alt="">
+                            <img class="slide" src="portfolio02.jpg" alt="">
+                            <img class="slide" src="portfolio03.jpg" alt="">
+                            <img class="slide" src="portfolio04.jpg" alt="">
+                            <img class="slide" src="portfolio05.jpg" alt="">
+                            <img class="slide" src="portfolio06.jpg" alt="">
+                        </div>
+                        <div class="slide-buttons" id="slide-buttons">
+                            <button class="prev" onclick="changeSlide(-1)">Prev</button>
+                            <button class="next" onclick="changeSlide(1)">Next</button>
+                        </div>
+                        <div class="photo-vid" id="video">
+                            <video id="vid01" controls src="video.mp4"></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --------------contact------------- -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> epsyche362@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 09510832921</p>
+                    <div class="social-icons">
+                        <a href="https://x.com/Psyche1414"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61566055767599"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/squirdoo?igsh=MWU1OWQ0cDNicWZuNw=="><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="Info.docx" download class="btn btn2">Download Info</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="copyright">© Edward. Made with <i class="fa-solid fa-heart"></i> 2024 All Rights Reserved</div>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
